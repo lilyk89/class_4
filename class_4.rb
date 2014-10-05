@@ -1,4 +1,4 @@
-# hello
+## hello
 
 # puts "What is your name?"
 # name = gets.chomp()
@@ -17,7 +17,7 @@
 # end
 
 
-# Let's add to N 
+## Let's add to N 
 
 # number = 1
 # sum = 0
@@ -30,7 +30,7 @@
 # 	number = number + 1
 # end
 
-# add or multiply
+## add or multiply
 
 # i = 1
 # sum = 0
@@ -58,7 +58,7 @@
 # 	else "Error"
 # end
 
-# secret number
+## secret number
 
 # secret_number = 42
 # tries = 1
@@ -90,36 +90,47 @@
 
 # end
 
-# sparkle magic
+## sparkle magic
 
 # strings = ["Hello","World","inside","a","frame"]
 
+# # find the longest string
 # longest = (strings.max_by  {|string| string.length}).length
 
+# # find the difference between the length of each string and the longest string
 # strings.each do |string|
 # 	difference = longest - string.length
+
+## now add 1 space on the end of each string for every character of difference there was in length
 # 		difference.times do
 # 			string << " " 
 # 		end
 # end
+
+# # put a star on the beginning and end of each string
 # strings.map do |string|
 # 	string.prepend "*"
 # 	string << "*"
 # end
 
+
+##top of the box
 # (longest+2).times do
 # 	print "*"
 # end
 
+##return
 # print "\n"
 
+## print all the strings (sides of the box)
 # strings.each {|string| puts string}
 
+##bottom of the box
 # (longest+2).times do
 # 	print "*"
 # end
 
-# modulus numbers
+## modulus numbers
 
 # n = 1
 # while n <= 75
@@ -135,9 +146,9 @@
 # n = n+1
 # end
 
-# weather
+# # weather
 
-# none of the below works
+# # none of the below works
 
 
 # weather_data = hash[File.read('weather.txt').split("\n").map{ |element| element.split(' ')}]
