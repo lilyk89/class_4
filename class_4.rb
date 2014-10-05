@@ -148,22 +148,24 @@
 
 # # weather
 
-# # none of the below works
 
-
-# weather_data = hash[File.read('weather.txt').split("\n").map{ |element| element.split(' ')}]
 
 weather_data = File.readlines("weather.txt")
+better_weather_data = []
+difference = []
+
+weather_data.each {|line| better_weather_data.push(line.split(" "))}
+
+better_weather_data.each {|array| difference.push(array[1].to_i - array[2].to_i)}
+
+#is this cheating?
+difference.delete_at(0)
+
+puts difference.index(difference.min)+1 # <-- is that cheating?
+
+
+
+# scraps:
  # :headers => true, :col_sep => " ", :converter=> "numeric" )
-# better_weather_data = {}
-
-# make the first line of the file the headers
-# better_weather_data
+# weather_data = hash[File.read('weather.txt').split("\n").map{ |element| element.split(' ')}]
 # weather_data.each { |datum| datum.split(" ")}
-
-puts weather_data[2].class
-
-
-
-
-
